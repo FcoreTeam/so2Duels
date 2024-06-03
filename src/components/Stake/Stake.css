@@ -1,0 +1,96 @@
+.stake {
+  border-radius: 15px;
+  background: rgb(5, 9, 20);
+  padding: 30px;
+  width: 100%;
+  max-width: 350px;
+  margin-top: 15px;
+}
+
+.stake__title {
+  color: rgb(180, 189, 203);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.stake__box {
+  color: rgb(152, 162, 188);
+  font-size: 14.6px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 21px;
+}
+
+.stake__box label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stake__box input {
+  border: 1px solid rgb(39, 46, 66);
+  border-radius: 7px;
+  height: 35px;
+  padding: 0 0 0 25px;
+  background: rgb(26, 33, 52);
+
+  color: rgb(75, 84, 106);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  max-width: 110px;
+}
+
+.stake__box div {
+  position: relative;
+}
+
+.stake__box div::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1400px) {
+  .stake {
+    width: 250px;
+  }
+
+  .stake__title {
+    font-size: 18px;
+  }
+
+  .stake__box {
+    flex-wrap: wrap;
+  }
+
+  .stake__box input {
+    height: 30px;
+  }
+  .duel__btn button {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stake {
+    width: 220px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stake {
+    width: 100%;
+    max-width: 100%;
+  }
+}

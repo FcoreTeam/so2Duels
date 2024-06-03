@@ -1,0 +1,86 @@
+.dispute {
+  background: rgb(5, 9, 20);
+  border-radius: 12px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.dispute__header {
+  color: rgb(180, 189, 203);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 16px;
+  border-bottom: 1px solid rgb(22, 27, 40);
+}
+
+.dispute__body {
+  height: 350px;
+}
+
+.dispute__input--file {
+  display: none;
+}
+
+.dispute__inputs {
+  position: relative;
+}
+
+.dispute__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: rgb(16, 23, 43);
+  border: none;
+  padding: 10px 72px;
+  resize: none;
+  color: #fff;
+}
+
+.dispute__input::placeholder {
+  color: rgb(66, 79, 115);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.dispute__input:focus-visible {
+  outline: none;
+}
+
+.dispute__file {
+  position: absolute;
+  bottom: 5px;
+  left: 11px;
+  color: rgb(74, 104, 150);
+  font-size: 22px;
+  padding: 5px 10px 5px 0;
+  border-right: solid 2px rgb(74, 104, 150);
+  cursor: pointer;
+}
+
+.dispute__file span {
+  display: block;
+  transform: rotate(45deg);
+}
+
+.dispute__button {
+  position: absolute;
+  bottom: 0px;
+  right: 11px;
+  background: #00000000;
+  border: none;
+  color: rgb(74, 104, 150);
+  font-size: 22px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dispute__button:hover {
+  color: rgba(74, 104, 150, 0.774);
+}
+
+.dispute__file:hover {
+  border-right: solid 2px rgba(74, 104, 150, 0.774);
+  color: rgba(74, 104, 150, 0.774);
+}

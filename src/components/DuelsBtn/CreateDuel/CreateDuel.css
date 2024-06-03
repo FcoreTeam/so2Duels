@@ -1,0 +1,141 @@
+.create-duel {
+  background-color: rgb(5, 9, 20);
+  border-radius: 12px;
+  position: fixed;
+  width: 100%;
+  max-width: 550px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 7;
+}
+
+.create-duel__title {
+  color: rgb(180, 189, 203);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 19px;
+  border-bottom: 1px solid rgb(22, 27, 40);
+  padding: 15px 20px 20px;
+  position: relative;
+}
+
+.create-duel__title span {
+  color: #fff;
+  transform: rotate(45deg);
+  display: block;
+  width: fit-content;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.create-duel__title span:hover {
+  color: #ffffff67;
+}
+
+.create-duel__body {
+  padding: 15px 20px 20px;
+  color: #fff;
+}
+
+.create-duel__overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  background-color: #ffffff7a;
+}
+
+.create-duel__wrapper {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.create-duel__label {
+  color: rgb(107, 127, 157);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.create-duel__box {
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.create-duel__active {
+  background-color: rgb(107 127 157 / 19%);
+}
+
+.create-duel__active .create-duel__label {
+  color: #fff;
+}
+
+.create-duel__stake {
+  margin-top: 15px;
+}
+
+.create-duel__stake input {
+  border: 1px solid rgb(39, 46, 66);
+  border-radius: 7px;
+  height: 35px;
+  padding: 0 0 0 5px;
+  background: rgb(26, 33, 52);
+  color: rgb(75, 84, 106);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  max-width: 110px;
+}
+
+.create-duel__btns {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.create-duel__create {
+  border: none;
+  border-radius: 12px;
+  height: 28px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  gap: 10px;
+  width: 100px;
+  background: linear-gradient(180deg, rgb(41, 255, 101), rgb(17, 130, 69) 100%);
+  margin-top: 15px;
+}
+
+.create-duel__clear {
+  width: 100px;
+  background: linear-gradient(180deg, rgb(36, 45, 54), rgb(18, 23, 27) 100%);
+  margin-top: 15px;
+  border-radius: 12px;
+  height: 28px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+}

@@ -1,0 +1,96 @@
+.duel-info__header {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  justify-content: center;
+}
+.duel-profile__nickname {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.duel-profile__id {
+  color: rgb(118, 132, 152);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.duel-profile__img {
+  border-radius: 100%;
+  width: 117px;
+  height: 117px;
+  overflow: hidden;
+}
+
+.duel-profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.duel-profile-first {
+  text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .duel-profile__img {
+    width: 100px;
+    height: 100px;
+  }
+  .duel-profile__img img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .img-vs {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-vs {
+    width: 120px;
+  }
+
+  .duel-profile__img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .duel-profile__img img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .duel-info__header {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .duel-profile-first {
+    flex-direction: column-reverse !important;
+  }
+
+  .duel-profile {
+    flex-direction: column;
+  }
+  .img-vs {
+    height: 100px;
+    width: 220px;
+  }
+  .duel-profile__img img {
+    width: 200px;
+    height: 200px;
+  }
+  .duel-profile__img {
+    width: 200px;
+    height: 200px;
+  }
+}

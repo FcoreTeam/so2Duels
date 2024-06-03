@@ -1,0 +1,133 @@
+.subheader-duel {
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(5, 9, 20);
+  display: grid;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.subheader-duel__warning {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.subheader-duel__warning-img-message {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.subheader-duel__timer {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: center;
+}
+
+.subheader-duel__map {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.subheader-duel__map-label {
+  color: rgb(107, 127, 157);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+}
+
+.subheader-duel__map-title {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .subheader-duel__warning-img-message {
+    font-size: 14px;
+  }
+  .subheader-duel__timer {
+    font-size: 52px;
+  }
+  .subheader-duel__warning-img img {
+    width: 62px;
+    height: 60px;
+  }
+  .subheader-duel__map-img img {
+    width: 120px;
+    height: 71px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .subheader-duel {
+    grid-template-areas:
+      "timer timer"
+      "warning map";
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .subheader-duel__warning {
+    grid-area: warning;
+  }
+
+  .subheader-duel__timer {
+    grid-area: timer;
+  }
+
+  .subheader-duel__map {
+    grid-area: map;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subheader-duel {
+    grid-template-areas:
+      "timer map"
+      "warning warning";
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .subheader-duel__timer {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .subheader-duel__warning {
+    gap: 10px;
+  }
+  .subheader-duel__warning-img-message {
+    max-width: 320px;
+    text-align: center;
+  }
+  .subheader-duel__timer {
+    font-size: 32px;
+  }
+  .subheader-duel__warning {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subheader-duel__map-title {
+    font-size: 28px;
+  }
+
+  .subheader-duel__map-img img {
+    width: 70px;
+    height: 41px;
+  }
+}

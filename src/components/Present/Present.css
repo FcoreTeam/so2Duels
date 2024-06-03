@@ -1,0 +1,174 @@
+.present {
+  padding: 40px;
+  max-width: 493px;
+  border-radius: 7px;
+  width: 100%;
+}
+
+.present__title {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.present__desc {
+  color: rgb(202, 203, 217);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 20px;
+  max-width: 286px;
+}
+
+.present__btns {
+  display: flex;
+  gap: 7px;
+  margin-top: 180px;
+}
+
+.present__button {
+  border-radius: 6px;
+  border: 0;
+  box-shadow: 0px 4.41px 7.21px 2.94px rgba(0, 0, 0, 0.05);
+  height: 38px;
+
+  color: rgb(6, 12, 27);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: left;
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  transition: 0.2s all;
+}
+
+.present__reverse {
+  border-radius: 6px;
+  height: 38px;
+  width: 38px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+
+  transition: 0.2s all;
+}
+
+.tg .present__button {
+  background: rgb(15, 194, 245);
+}
+
+.tg .present__button:hover {
+  background: rgba(15, 194, 245, 0.2);
+  color: rgb(15, 194, 245);
+}
+
+.tg .present__reverse {
+  background: rgba(15, 194, 245, 0.2);
+  color: rgb(15, 194, 245);
+}
+
+.tg .present__reverse:hover {
+  background: rgb(15, 194, 245);
+  color: rgb(6, 12, 27);
+}
+
+.vk .present__button {
+  background: rgb(1, 139, 246);
+}
+
+.vk .present__button:hover {
+  background: rgba(1, 138, 246, 0.2);
+  color: rgb(1, 139, 246);
+}
+
+.vk .present__reverse {
+  background: rgba(1, 138, 246, 0.2);
+  color: rgb(1, 139, 246);
+}
+
+.vk .present__reverse:hover {
+  background: rgb(1, 139, 246);
+  color: rgb(6, 12, 27);
+}
+
+.youtube .present__button {
+  background: rgb(246, 1, 1);
+}
+
+.youtube .present__button:hover {
+  background: rgba(246, 1, 1, 0.2);
+  color: rgb(246, 1, 1);
+}
+
+.youtube .present__reverse {
+  background: rgba(246, 1, 1, 0.2);
+  color: rgb(246, 1, 1);
+}
+
+.youtube .present__reverse:hover {
+  background: rgb(246, 1, 1);
+  color: rgb(6, 12, 27);
+}
+
+@media screen and (max-width: 1400px) {
+  .present__desc {
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .present {
+    padding: 30px;
+  }
+  .present__btns {
+    margin-top: 120px;
+  }
+  .present__button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .present {
+    padding: 20px;
+  }
+
+  .present__btns {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presents__wrapper {
+    flex-wrap: wrap;
+  }
+  .present {
+    max-width: calc(50% - 20px);
+  }
+  .present:nth-child(3) {
+    max-width: 60%;
+  }
+  .present__btns {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .present {
+    max-width: 100%;
+  }
+  .present:nth-child(3) {
+    max-width: 100%;
+  }
+  .present__btns {
+    margin-top: 120px;
+  }
+  .present__title {
+    font-size: 18px;
+  }
+}

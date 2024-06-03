@@ -1,0 +1,68 @@
+.foldable {
+  border-radius: 15px;
+  background: rgb(5, 9, 20);
+  padding: 24px 35px 0;
+  margin-top: 20px;
+}
+
+.foldable__header {
+  color: rgb(246, 238, 245);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 0 0 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  transition: 0.2s all;
+  user-select: none;
+}
+
+.foldable__icon {
+  transition: 0.1s all;
+}
+
+.foldable__icon-open {
+  transform: scaleY(-1);
+}
+
+.foldable__header span::before {
+  font-size: 44px;
+  color: rgb(74, 94, 125);
+}
+
+.foldable__body {
+  color: rgb(207, 209, 221);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  border-top: rgb(41, 53, 70) solid 1px;
+  padding: 35px 0;
+  transition: 0.13s;
+}
+.foldable .foldable__open {
+  max-height: auto;
+}
+.foldable .foldable__close {
+  overflow: hidden;
+  max-height: 0px;
+  padding: 0;
+  border-top: rgba(41, 53, 70, 0) solid 1px;
+}
+
+@media screen and (max-width: 576px) {
+  .foldable {
+    padding: 12px;
+  }
+
+  .foldable__header {
+    gap: 10px;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .foldable__body {
+    padding: 12px;
+  }
+}

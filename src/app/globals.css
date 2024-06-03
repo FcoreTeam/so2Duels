@@ -1,0 +1,144 @@
+@import "./../styles/font-icon.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./../styles/animation.css";
+@import "./../styles/profile.css";
+@import "./../styles/support.css";
+@import "./../styles/main.css";
+@import "./../styles/duels.css";
+@import "./../styles/add.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-header {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1520px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main {
+  background: rgb(6, 12, 27);
+  min-height: 100vh;
+}
+
+.label {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1560px) {
+  .container-header {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container-header {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-header {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-header {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-header {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container-header {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .label {
+    font-size: 20px;
+  }
+
+  .duel-info {
+    padding: 30px 0 !important;
+  }
+}

@@ -1,0 +1,111 @@
+.add {
+  padding: 32px 0;
+}
+
+.add__file {
+  display: none;
+}
+
+.add__box {
+  position: relative;
+}
+
+.add__file-label {
+  color: rgb(74, 104, 150);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  transition: 0.2s all;
+}
+
+.add__file-label:hover {
+  color: rgb(168, 185, 211);
+}
+
+.add__file-label span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  transform: rotate(-45deg);
+}
+
+.add__send {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.add__input {
+  position: relative;
+  width: 100%;
+}
+
+.add__input::before {
+  content: "@";
+  color: rgb(14, 94, 187);
+  font-size: 36px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-60%);
+}
+
+.add__email {
+  color: rgb(180, 189, 203);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 12px;
+  background: rgb(5, 9, 20);
+  border: none;
+  padding: 16px;
+  padding-left: 50px;
+  line-height: 19px;
+  width: 100%;
+}
+
+.add__email::placeholder {
+  color: rgb(66, 79, 115);
+}
+
+.add__button {
+  border-radius: 13.3px;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 41, 41),
+    rgb(36, 228, 90) 0.01%,
+    rgb(14, 109, 47) 99.99%,
+    rgb(175, 22, 22) 100%
+  );
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 0 10px;
+}
+
+.add__button:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(14, 109, 47),
+    rgb(14, 109, 47) 0.01%,
+    rgb(14, 109, 47) 99.99%,
+    rgb(14, 109, 47) 100%
+  );
+}
+
+@media screen and (max-width: 576px) {
+  .add__send {
+    flex-direction: column;
+  }
+  .add__button {
+    height: 44px;
+  }
+}

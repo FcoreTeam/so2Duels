@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("/fonts/icomoon.eot?21ulj5");
+  src: url("/fonts/icomoon.eot?21ulj5#iefix") format("embedded-opentype"),
+    url("/fonts/icomoon.ttf?21ulj5") format("truetype"), url("/fonts/icomoon.woff?21ulj5") format("woff"),
+    url("/fonts/icomoon.svg?21ulj5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vk-login:before {
+  content: "\e90e";
+}
+.icon-add-file:before {
+  content: "\e90d";
+}
+.icon-send:before {
+  content: "\e909";
+}
+.icon-plus:before {
+  content: "\e904";
+}
+.icon-copy:before {
+  content: "\e90b";
+}
+.icon-coin:before {
+  content: "\e90c";
+}
+.icon-reverse:before {
+  content: "\e90a";
+}
+.icon-users:before {
+  content: "\e900";
+}
+.icon-notifications:before {
+  content: "\e901";
+}
+.icon-discord:before {
+  content: "\e902";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-vk:before {
+  content: "\ea98";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.icon-hammer2:before {
+  content: "\e9a8";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-power-cord:before {
+  content: "\e9b7";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-link:before {
+  content: "\e903";
+}
+.icon-back:before {
+  content: "\e905";
+}
+.icon-search:before {
+  content: "\e906";
+}
+.icon-expand:before {
+  content: "\e907";
+}
+.icon-swords:before {
+  content: "\e908";
+}
